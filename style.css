@@ -6,9 +6,7 @@
     div.left-container{
       display: none;
     }
-    div.box{
-       width:80%;
-    }
+   
     div.right-container{
         width: 100%;
     }
@@ -16,12 +14,24 @@
         width: 100%;
         flex-direction: column;
     }
+    div#box-grid{
+        grid-template-columns: repeat(2, 1fr)
+    }
+  }
+  @keyframes example{
+    from {
+      transform: translateY(100%);
+    }
+  
+    to {
+      transform: translateY(0%);
+    }
   }
 .left-container{
     display: flex;
     width: 15%;
     min-height: 100vh;
- background-color: rgb(18, 173, 224);  
+ background-color: rgb(0, 132, 255);  
  position: fixed; 
  
 
@@ -49,13 +59,13 @@ li{
     margin-left: auto;
      width: 84.5%;
      min-height: 100vh;
-    background-color: rgb(243, 243, 172);
+    background-color: rgba(255, 255, 133, 0.822);
     
 }
 .top-container{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(242, 243, 229);
+    background-color: rgba(227, 233, 159, 0.808);
     min-height: 20vh;
 }
 button{
@@ -97,7 +107,10 @@ h3{
     font-family:serif;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: whitesmoke;
+    animation-name: example;
+    animation-duration: 2s;
 }
+
 footer{
     background-color: rgb(116, 113, 113);
     color: rgb(224, 224, 224);
@@ -117,4 +130,19 @@ input{
     margin-top: 7px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color:grey;
+}
+button:hover{
+    color: darkblue;
+    background-color: whitesmoke;
+}
+.def{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+      font-family:serif;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: whitesmoke;
+      animation-name: example;
+      animation-duration: 2s;
 }
