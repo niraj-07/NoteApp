@@ -2,6 +2,21 @@
     margin: 0px;
     padding: 0px;
 }
+@media only screen and (max-width: 600px) {
+    div.left-container{
+      display: none;
+    }
+    div.box{
+       width:80%;
+    }
+    div.right-container{
+        width: 100%;
+    }
+    div.top-container{
+        width: 100%;
+        flex-direction: column;
+    }
+  }
 .left-container{
     display: flex;
     width: 15%;
